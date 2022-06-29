@@ -1,0 +1,56 @@
+
+<?php if(isset($_SESSION['employee_email'])) : ?>
+<?php 
+$db = mysqli_connect('localhost', 'root', '', 'bahar_al_shamal');
+ 
+  $query = "SELECT * FROM emails";
+  $results = mysqli_query($db, $query);
+
+ ?>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+  <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+ </head>
+ <body>
+ <table style="margin-bottom: 40px; margin-top: 20px;">
+ 	<tr>
+ 		<th bgcolor="#0069D9"><strong>ID</strong></th>
+ 		<th bgcolor="#0069D9"><strong>Email</strong></th>
+    <th bgcolor="#0069D9"><strong>Edit</strong></th>
+ 	</tr>
+ 	<?php 
+	 while($row = mysqli_fetch_assoc($results)){
+	 ?>
+            <tr>
+            <td><?php echo $row["id"]; ?></td>
+            <td><?php echo $row["email"]; ?></td>
+            <td><a href="e_delete_email.php?id=<?php echo $row["id"]; ?>">Delete</a></td>
+            </tr>
+	<?php 
+	}
+	?>
+ 	</table>
+  <?php else : ?>
+  <h4 align="center" style="color: red;">Only Employee has access to this page</h4>
+<?php endif?>
+ </body>
+ </html>

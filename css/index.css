@@ -1,0 +1,341 @@
+html{
+    scroll-behavior: smooth;
+}
+*{margin: 0%;padding: 0%; box-sizing: border-box; }
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: black;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px
+}
+h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.header{
+    width: 100%;
+    height: 92px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;    
+    z-index: -1;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;    
+    z-index: -1;
+}
+.nav-item a{
+color: rgb(245, 245, 245)!important;
+font-weight: bold;
+}
+
+.header-button a{ 
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+}
+.login:hover{
+    color:white;
+    background-color:#0bb43e;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.header-button a:hover{
+    color:white;
+    background-color:#50a8d1;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div p{
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px;
+    bottom: 20px;
+}
+/**********************************  extra div start*******************/
+.header-extradiv{
+    width: 100%; height: auto;
+    margin: 100px 0px;
+    text-align: center;
+}
+.extra-div{
+
+border: medium none;
+border-radius: 3px;
+padding: 50px;
+transition: 0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+/**********************************  extra div end*******************/
+/**********************************  pricing div strat*******************/
+.pricing{
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;    
+    z-index: -1;
+    background: linear-gradient(160deg, #47cf47 55%, #fff 0%);
+}
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: gray;
+    padding: 25px 9px!important;
+}
+.card-body{
+    padding: 30px 0px!important;
+}
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background:rgb(53, 54, 80)!important;
+    padding: 30px 0px!important;
+}
+.card-footer a{ 
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+}
+.card:hover .card-footer a{
+    color: white;
+    background-color:#50a8d1;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover .card-header, .card:hover .money{
+color: #50d1c0;
+}
+.card-second{
+    transform: translateY(0px);
+    margin: 0px 0;
+}
+/**********************************  pricing div end *******************/
+/**********************************  customer feedback start *******************/
+.happyclients{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 70px;
+       
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+.box:hover{
+    background: #16c9f6;
+}
+.box:hover p{
+    color: white;
+}
+.carousel-indicators{
+position: absolute;
+right: 0%;
+bottom: -60px!important;
+}
+.carousel-indicators li{
+    background-color: cornflowerblue!important;
+}
+.box a{
+    position: relative;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.box a::after{
+    content: "\f10d";
+    font-family: Fontawesome;
+    background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:black;
+}
+.box h2{
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+/**********************************  customer feedback end *******************/
+/**********************************  contact us start *******************/
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contactus::before{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background:linear-gradient(330deg,#47cf47 55% , white 0) ;
+    z-index: -1;
+}
+/**********************************  contact us end *******************/
+/**********************************  Notification start *******************/
+.notification{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+.noti-fication{
+    border-radius: 100px 0 0 100px;   
+}
+/**********************************  Notification end *******************/
+/**********************************  footer start *******************/
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: rgb(83, 150, 113);
+    position: relative;
+}
+.footersection p{
+    color: white;   
+}
+.footersection li a{
+    font-size: 0.9rem;
+    color: white;
+}
+.footersection li{
+    font-size: 0.9rem;
+    color: white;
+}
+.footersection h3{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+#myBtn{
+   
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: white;
+    border: none;
+    background: rgb(156, 172, 153);
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: gray;
+}
+/**********************************  footer end *******************/
+@media(max-width: 768px)
+{
+    .footer-div:nth-child(2){
+        text-align: left!important;
+
+    }
+    .footer-div{
+        margin: 30px 0;
+    }
+}

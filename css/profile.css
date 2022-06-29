@@ -1,0 +1,17 @@
+body{
+    background: white;
+}
+
+.profile-sidebar{
+    padding: 20px 0 10px 0;
+    background: white;
+}
+.profile{
+    margin: 20px 0;
+}
+.profile-user-pic{
+    float: none;
+    margin: 0 auto;
+    width: 10%;
+    height: 10%;
+}
